@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Evolutionary Robotics | Ғылыми энциклопедиялық сайт</title>
+  <meta name="description" content="Evolutionary Robotics тақырыбындағы Wikipedia-style ғылыми сайт: генетикалық алгоритм, робот түрлері, fitness function, симуляция, диаграммалар, терминдер және әдебиеттер." />
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <span class="brand-icon">🤖</span>
+      <div>
+        <strong>Evolutionary<br/>Robotics</strong>
+        <small>Ғылыми энциклопедия</small>
+      </div>
+    </div>
+    <nav>
+      <a href="#home">Басты бет</a>
+      <a href="#abstract">Аннотация</a>
+      <a href="#about">Жоба туралы</a>
+      <a href="#evolution">Evolutionary Robotics</a>
+      <a href="#taxonomy">Робот түрлері</a>
+      <a href="#research">Зерттеулер</a>
+      <a href="#charts">Диаграммалар</a>
+      <a href="#simulator">GA симулятор</a>
+      <a href="#algorithm">Алгоритм</a>
+      <a href="#fitness">Fitness Function</a>
+      <a href="#architecture">Жүйе архитектурасы</a>
+      <a href="#gallery">Галерея</a>
+      <a href="#glossary">Терминдер</a>
+      <a href="#sources">Әдебиеттер</a>
+    </nav>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <button class="menu" id="menuBtn">☰</button>
+      <div class="searchBox">
+        <input id="searchInput" type="search" placeholder="Wikipedia сияқты іздеу: MIT, Fitness, Mutation, Biped..." />
+      </div>
+      <button class="themeBtn" id="themeBtn">🌙 / ☀️</button>
+    </header>
+
+    <section id="home" class="hero section searchable" data-keywords="evolutionary robotics genetic algorithm robot fitness artificial intelligence optimization">
+      <div class="heroText">
+        <span class="badge">🧬 Genetic Algorithm + Robotics + AI</span>
+        <h1>Evolutionary Robotics</h1>
+        <p>
+          Роботтардың қозғалысын, басқару стратегиясын және дене құрылымын эволюциялық әдістер арқылы
+          жетілдіруді түсіндіретін толыққанды ғылыми-интерактивті сайт.
+        </p>
+        <div class="heroActions">
+          <a class="btn primary" href="#simulator">Симуляторды көру</a>
+          <a class="btn secondary" href="#research">Зерттеулерді ашу</a>
+        </div>
+      </div>
+      <div class="heroCard">
+        <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1400&q=80" alt="Робототехника" />
+        <div class="glass">
+          <strong>Идея:</strong> табиғи эволюция логикасын робототехникадағы оптимизацияға қолдану.
+        </div>
+      </div>
+    </section>
+
+    <section class="stats section">
+      <article class="metric"><span>8+</span><p>үлкен бөлім</p></article>
+      <article class="metric"><span>3</span><p>ғылыми кейс</p></article>
+      <article class="metric"><span>5</span><p>интерактив функция</p></article>
+      <article class="metric"><span>92%</span><p>ең жоғары fitness</p></article>
+    </section>
+
+    <section id="abstract" class="section searchable" data-keywords="аннотация мақсат өзектілік ғылыми жаңалық практикалық маңыз">
+      <h2>🧾 Аннотация</h2>
+      <div class="wikiBox">
+        <p>
+          <b>Evolutionary Robotics</b> — роботтардың мінез-құлқын, қозғалысын және құрылымын эволюциялық
+          есептеу әдістері арқылы автоматты түрде жақсартатын жасанды интеллект бағыты. Бұл бағытта робот
+          бірден дайын күйде жасалмайды; оның көптеген нұсқалары генерацияланып, әр нұсқа fitness function арқылы бағаланады.
+        </p>
+        <p>
+          Жобаның мақсаты — генетикалық алгоритмдердің робототехникада қалай қолданылатынын көрнекі түрде көрсету.
+          Сайтта теориялық түсіндірме, зерттеу салыстыруы, диаграммалар, формула, алгоритм кезеңдері, симулятор,
+          терминологиялық сөздік және әдебиеттер берілген.
+        </p>
+      </div>
+    </section>
+
+    <section id="about" class="section twoCol searchable" data-keywords="жоба туралы ғылыми сипаттама evolutionary robotics">
+      <div>
+        <h2>📖 Жобаның ғылыми сипаттамасы</h2>
+        <p>
+          Бұл сайт физикалық роботты тікелей құрастырмайды, бірақ робототехникадағы ғылыми модельдеуді түсіндіреді.
+          Негізгі назар роботтың қозғалыс тиімділігін бағалау, үздік индивидтерді таңдау және жаңа ұрпақ арқылы
+          нәтижені жақсарту процесіне аударылады.
+        </p>
+        <p>
+          Мұндай тәсіл роботты қолмен ұзақ баптаудың орнына, алгоритмнің өзі жақсы шешімдерді табуына мүмкіндік береді.
+          Сондықтан evolutionary robotics автономды жүйелер, soft robotics, biped locomotion және modular robotics салаларында маңызды.
+        </p>
+      </div>
+      <div class="infoPanel">
+        <h3>Сайттағы функциялар</h3>
+        <ul>
+          <li>Іздеу жүйесі және бөлімдерді сүзу;</li>
+          <li>dark/light режим;</li>
+          <li>интерактивті диаграммалар;</li>
+          <li>fitness калькуляторы;</li>
+          <li>population/generation симуляторы;</li>
+          <li>ғылыми кесте және терминдер сөздігі.</li>
+        </ul>
+      </div>
+    </section>
+
+<section id="evolution" class="section searchable" data-keywords="3d robot simulation evolutionary robotics biped manipulator robot">
+  <div class="section-header">
+    <span class="tag">3D интерактив симулятор</span>
+    <h2>🤖 Evolutionary Robotics Robot Lab</h2>
+    <p>
+      Бұл бөлімде екі түрлі робот моделі көрсетіледі: екі аяқты жүретін робот және манипулятор робот.
+      Әр робот таңдалғанда басқару батырмалары да сол роботқа сәйкес ауысады.
+    </p>
+  </div>
+
+  <div class="robot-lab">
+    <div class="robot-list">
+      <h3>Роботты таңдаңыз</h3>
+
+      <button onclick="loadRobotModel('biped')">🚶 Biped Robot</button>
+      <button onclick="loadRobotModel('manipulator')">🦾 Manipulator Robot</button>
+    </div>
+
+    <div class="robot-stage">
+      <h3 id="robotName">🚶 Biped Robot</h3>
+
+      <div id="threeContainer" class="three-container"></div>
+
+      <div class="control-panel" id="robotControls"></div>
+
+      <div class="robot-stats">
+        <div>
+          <span>Generation</span>
+          <strong id="generation">1</strong>
+        </div>
+        <div>
+          <span>Distance / Precision</span>
+          <strong id="robotDistance">12</strong>
+        </div>
+        <div>
+          <span>Stability / Accuracy</span>
+          <strong id="robotStability">45%</strong>
+        </div>
+        <div>
+          <span>Fitness</span>
+          <strong id="robotFitness">28</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section id="taxonomy" class="section searchable" data-keywords="soft robot biped robot modular robot робот түрлері taxonomy">
+      <h2>🧩 Evolutionary Robotics қолданылатын робот түрлері</h2>
+      <div class="cardGrid three">
+        <article class="miniCard"><h3>Soft Robot</h3><p>Иілгіш материалдан жасалған робот. Эволюциялық алгоритм дене пішінін және қозғалыс стратегиясын бірге оңтайландыра алады.</p></article>
+        <article class="miniCard"><h3>Biped Robot</h3><p>Екі аяқпен жүретін робот. Негізгі қиындық — тепе-теңдік, құлап қалмау және тұрақты қадам жасау.</p></article>
+        <article class="miniCard"><h3>Modular Robot</h3><p>Бірнеше модульден тұратын робот. Алгоритм модульдердің орналасуы мен қозғалыс ретін өзгерту арқылы тиімді форма табады.</p></article>
+      </div>
+    </section>
+
+    <section id="research" class="section searchable" data-keywords="MIT Evolution Gym Szabo Biped M-TRAN Modular Robot research">
+      <div class="sectionHead">
+        <h2>🔬 Ғылыми зерттеулер базасы</h2>
+        <select id="researchSelect"></select>
+      </div>
+      <div class="researchGrid">
+        <article class="featureCard" id="selectedResearch"></article>
+        <div class="tableWrap">
+          <table id="researchTable">
+            <thead>
+              <tr>
+                <th>Зерттеу</th><th>Ұйым / Автор</th><th>Робот түрі</th><th>Әдіс</th><th>Population</th><th>Generation</th><th>Fitness</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="charts" class="section searchable" data-keywords="chart диаграмма statistics population generation fitness">
+      <div class="sectionHead">
+        <h2>📊 Статистика және диаграммалар</h2>
+        <div class="tabs" id="chartTabs">
+          <button data-chart="fitness" class="active">Fitness өсуі</button>
+          <button data-chart="population">Population</button>
+          <button data-chart="generation">Generation</button>
+          <button data-chart="robots">Робот түрлері</button>
+        </div>
+      </div>
+      <div class="chartCard"><canvas id="mainChart"></canvas></div>
+    </section>
+
+    <section id="simulator" class="section twoCol searchable" data-keywords="simulator simulation slider fitness calculator alpha beta gamma distance stability collision">
+      <div>
+        <h2>🧪 Интерактивті GA симулятор</h2>
+        <p>Слайдерлерді өзгертіп, роботтың fitness нәтижесі қалай ауысатынын көріңіз.</p>
+        <div class="sliderBox">
+          <label>Distance: <b id="distanceVal">70</b></label><input type="range" id="distance" min="0" max="100" value="70" />
+          <label>Stability: <b id="stabilityVal">80</b></label><input type="range" id="stability" min="0" max="100" value="80" />
+          <label>Collision penalty: <b id="collisionVal">15</b></label><input type="range" id="collision" min="0" max="100" value="15" />
+        </div>
+      </div>
+      <div class="resultPanel">
+        <span>Есептелген fitness</span>
+        <strong id="fitnessResult">0</strong>
+        <p id="fitnessComment">Нәтиже есептелуде...</p>
+      </div>
+    </section>
+
+    <section id="algorithm" class="section searchable" data-keywords="genetic algorithm selection crossover mutation initialization">
+      <h2>🧬 Генетикалық алгоритм кезеңдері</h2>
+      <div class="timeline" id="algorithmTimeline"></div>
+    </section>
+
+    <section id="fitness" class="section twoCol searchable" data-keywords="fitness function distance stability collision formula">
+      <div>
+        <h2>🎯 Fitness Function түсіндірмесі</h2>
+        <div class="formula">Fitness = α · Distance + β · Stability − γ · Collision</div>
+        <p>
+          Fitness function — роботтың сапасын сандық түрде бағалайтын функция. Ол роботтың қаншалықты алыс жүргенін,
+          қаншалықты тұрақты болғанын және қанша қате жібергенін біріктіріп, бір жалпы көрсеткіш береді.
+        </p>
+        <div class="note">
+          Мысалы, робот ұзақ жүрсе және тұрақты болса — fitness өседі. Ал құлау, соғылу немесе энергияны көп жұмсау — fitness көрсеткішін төмендетеді.
+        </div>
+      </div>
+      <img class="roundedImage" src="https://images.unsplash.com/photo-1516192518150-0d8fee5425e3?auto=format&fit=crop&w=1200&q=80" alt="AI робот" />
+    </section>
+
+    <section id="architecture" class="section searchable" data-keywords="architecture жүйе архитектурасы input processing output web interface">
+      <h2>🏗️ Жүйе архитектурасы</h2>
+      <div class="pipeline">
+        <div><b>1</b><span>Деректер</span><p>Зерттеу атауы, robot type, population, generation, fitness.</p></div>
+        <div><b>2</b><span>Өңдеу</span><p>JavaScript арқылы кесте, диаграмма және симулятор жаңарады.</p></div>
+        <div><b>3</b><span>Визуализация</span><p>Chart.js диаграммалары және интерактивті карточкалар.</p></div>
+        <div><b>4</b><span>Жариялау</span><p>GitHub Pages арқылы сайт сілтемесі жасалады.</p></div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section searchable" data-keywords="gallery суреттер робот artificial intelligence laboratory">
+      <h2>🖼️ Ғылыми визуал галерея</h2>
+      <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=900&q=80" alt="AI lab" />
+        <img src="https://images.unsplash.com/photo-1527430253228-e93688616381?auto=format&fit=crop&w=900&q=80" alt="robot arm" />
+        <img src="https://images.unsplash.com/photo-1518314916381-77a37c2a49ae?auto=format&fit=crop&w=900&q=80" alt="technology" />
+        <img src="https://images.unsplash.com/photo-1561557944-6e7860d1a7eb?auto=format&fit=crop&w=900&q=80" alt="automation" />
+      </div>
+    </section>
+
+    <section id="glossary" class="section searchable" data-keywords="glossary терминдер selection crossover mutation chromosome genotype phenotype">
+      <h2>📘 Терминологиялық сөздік</h2>
+      <div class="glossary" id="glossaryList"></div>
+    </section>
+
+      <section id="sources" class="section sources-section">
+    <div class="section-header">
+      <span class="tag">Дереккөздер</span>
+      <h2>Пайдаланылған ғылыми зерттеулер мен сілтемелер</h2>
+      <p>
+        Бұл бөлімде сайттағы теориялық ақпараттарға негіз болған нақты ғылыми еңбектер көрсетілген.
+        Диаграммалардағы кейбір Population, Generation және Fitness көрсеткіштері оқу мақсатындағы
+        визуализация ретінде берілген.
+      </p>
+    </div>
+
+    <div class="source-grid">
+
+      <article class="source-card">
+        <h3>MIT Evolution Gym</h3>
+        <p>
+          Evolution Gym — soft robot құрылымы мен басқаруын бірге оңтайландыруға арналған
+          үлкен benchmark. Ол робот денесін және control алгоритмін бірге дамыту идеясын көрсетеді.
+        </p>
+        <a href="https://cdfg.mit.edu/publications/evogym" target="_blank">
+          MIT ресми беті
+        </a>
+        <a href="https://people.csail.mit.edu/jiex/papers/EvoGym/paper.pdf" target="_blank">
+          Ғылыми мақала PDF
+        </a>
+        <a href="https://github.com/EvolutionGym/evogym" target="_blank">
+          GitHub репозиторийі
+        </a>
+        <span class="source-status real">Нақты ғылыми дереккөз</span>
+      </article>
+
+      <article class="source-card">
+        <h3>Szabo 2023 — Biped Robot</h3>
+        <p>
+          Бұл зерттеуде екі аяқты роботтың жүруі және құлағаннан кейін қайта тұруы
+          genetic algorithm арқылы оңтайландырылған.
+        </p>
+        <a href="https://www.mdpi.com/2227-7390/11/13/2931" target="_blank">
+          MDPI мақаласы
+        </a>
+        <span class="source-status real">Нақты ғылыми мақала</span>
+      </article>
+
+      <article class="source-card">
+        <h3>M-TRAN Modular Robot</h3>
+        <p>
+          M-TRAN — өзін қайта конфигурациялай алатын модульдік робот. Зерттеуде
+          genetic algorithm арқылы қозғалыс синтезі қарастырылады.
+        </p>
+        <a href="https://staff.aist.go.jp/e.yoshida/papers/rm03.pdf" target="_blank">
+          Evolutionary Motion Synthesis PDF
+        </a>
+        <a href="https://staff.aist.go.jp/e.yoshida/papers/Yoshida_IJRR_02.pdf" target="_blank">
+          M-TRAN туралы қосымша зерттеу
+        </a>
+        <span class="source-status real">Нақты ғылыми дереккөз</span>
+      </article>
+
+    </div>
+  </section>
+
+    <section id="sources" class="section searchable" data-keywords="әдебиеттер references sources bibliography">
+      <h2>📚 Пайдаланылған әдебиеттер және ақпарат көздері</h2>
+      <ol class="sources">
+        <li>MIT Evolution Gym — soft robot design and control co-optimization бағыты.</li>
+        <li>Szabo, 2023 — biped robot walking and recovery using genetic algorithms.</li>
+        <li>M-TRAN Modular Robot — modular robot locomotion synthesis.</li>
+        <li>Genetic Algorithm concepts: initialization, fitness evaluation, selection, crossover, mutation.</li>
+        <li>Holland J. H. Adaptation in Natural and Artificial Systems. University of Michigan Press.</li>
+        <li>Goldberg D. E. Genetic Algorithms in Search, Optimization, and Machine Learning. Addison-Wesley.</li>
+        <li>Nolfi S., Floreano D. Evolutionary Robotics: The Biology, Intelligence, and Technology of Self-Organizing Machines.</li>
+      </ol>
+    </section>
+
+    <div class="notice-box">
+  <strong>Ескерту:</strong>
+  сайттағы теориялық мәліметтер нақты ғылыми дереккөздерге сүйенеді.
+  Ал диаграммалардағы кейбір сандық көрсеткіштер оқу мақсатында визуализация ретінде қолданылды.
+</div>
+
+    <footer>
+      <p>© 2026 Nastya IKI-411.Емтихан үшін дайын кәсіби статикалық сайт.</p>
+    </footer>
+  </main>
+
+<script src="script.js"></script>
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.module.js"
+  }
+}
+</script>
+
+<script type="module" src="robot3d.js"></script>
+</body>
+</html>
